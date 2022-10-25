@@ -1,11 +1,11 @@
+//import logo from "../public/logo.svg"
+import NavBar from "./componentes/dev-edmen/NavBar";
 
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Hola grupo
-      </p>
+      <NavBar />
     </div>
   );
 }
