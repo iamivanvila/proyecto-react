@@ -1,9 +1,9 @@
-import NavBar from "./componentes/dev-edmen/NavBar";
+import ResponsiveAppBar from "./componentes/ResponsiveAppBar";
 
 function App() {
    return (
       <div className="App">
-         <NavBar />
+         <ResponsiveAppBar />
       </div>
    );
 }
