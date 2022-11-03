@@ -1,17 +1,13 @@
-
-import Banner from "./components/Banner/Banner" 
-//import logo from "../public/logo.svg"
+import Banner from "./componentes/Banner/Banner" 
 import NavBar from "./componentes/dev-edmen/NavBar";
 import SobreNosotros from "./componentes/SobreNosotros/SobreNosotros.js"
-
 
 function App() {
   return (
     <div className="App">
 
-      <Banner/>
-      
       <NavBar />
+      <Banner/>
       <SobreNosotros/>
 
     </div>
