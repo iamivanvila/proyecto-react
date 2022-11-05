@@ -1,11 +1,9 @@
-
+import Footer from "./Componentes/Footer";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Hola grupo
-      </p>
+      <Footer />
     </div>
   );
 }
