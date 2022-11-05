@@ -1,4 +1,4 @@
-import ResponsiveAppBar from "./componentes/ResponsiveAppBar";
+import ResponsiveAppBar from "./componentes/Navbar/ResponsiveAppBar";
 
 function App() {
    return (
