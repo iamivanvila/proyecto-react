@@ -5,19 +5,15 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-<<<<<<< HEAD
+
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-=======
-    "@mui/icons-material": "^5.10.9",
-    "@mui/material": "^5.10.12",
     "@mui/styled-engine-sc": "^5.10.6",
     "mui-button": "^1.0.8",
->>>>>>> 0ee2e58f2bc80f7b2ad9d477c50bed471a2d9289
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-material-ui-carousel": "^3.4.2",
