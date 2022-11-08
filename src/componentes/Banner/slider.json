@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "image":"https://img.freepik.com/psd-gratis/plantilla-banner-web-delicioso-menu-hamburguesas-comida_106176-411.jpg?w=996&t=st=1667413720~exp=1667414320~hmac=66f4ecedd558b7a684ced74969c30bc904a49748728f308295aa4501dc2e1345",
+        "title":"Visita nuestro menu!"
+    },
+    {
+        "id": 2,
+        "image":"https://cdn7.kiwilimon.com/recetaimagen/829/640x426/6147.jpg.webp",
+        "title":"Preparadas por los mejores chef!"
+    },
+    {
+        "id": 3,
+        "image":"https://aprendecocina.club/wp-content/uploads/2021/07/Hamburguesonass.jpg",
+        "title":"Las mejores promociones y combos"
+    },
+    {
+        "id": 4,
+        "image":"https://st3.depositphotos.com/9881890/14784/i/600/depositphotos_147846803-stock-photo-man-eating-hamburger.jpg",
+        "title":"Los comentarios de nuestros clientes :)"
+    }
+]
