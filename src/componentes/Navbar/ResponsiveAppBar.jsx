@@ -11,7 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import LunchDiningIcon from "@mui/icons-material/LunchDining";
+import logo from "../Navbar/logo.png";
 
 const pages = ["Inicio", "Nosotros", "Productos", "Contacto"];
 const settings = ["Perfil", "Cuenta", "Cerrar sesión"];
@@ -39,9 +39,17 @@ function ResponsiveAppBar() {
       <AppBar position="static">
          <Container maxWidth="xl">
             <Toolbar disableGutters>
-               <LunchDiningIcon
-                  sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+               <Box
+                  component="img"
+                  sx={{
+                     height: 70,
+                     display: { xs: "none", md: "flex" },
+                     mr: 1,
+                  }}
+                  alt="BurguerHouse"
+                  src={logo}
                />
+
                <Typography
                   variant="h6"
                   noWrap
@@ -96,8 +104,16 @@ function ResponsiveAppBar() {
                      ))}
                   </Menu>
                </Box>
-               <LunchDiningIcon
-                  sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+
+               <Box
+                  component="img"
+                  sx={{
+                     height: 70,
+                     display: { xs: "flex", md: "none" },
+                     mr: 1,
+                  }}
+                  alt="BurguerHouse"
+                  src={logo}
                />
                <Typography
                   variant="h5"
