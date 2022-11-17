@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
+import Productos from './Productos';
 
 
 
@@ -16,18 +16,29 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function Productos() {
+export default function ProductosDos() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} columns={12}>
-        {
-          Productos.map (Productos => (
-            <Grid item  xs={12} sm={6} md={4} lg={3}>
-          <Item><Productos key={Productos.id} ProductosDos={Productos}/></Item>
-        </Grid>
-          ))
-        }
+
+          <Grid item  xs={12} sm={6} md={4} lg={3}>
+          <Item><Productos/></Item>
+          </Grid>
+
+          <Grid item  xs={12} sm={6} md={4} lg={3}>
+          <Item><Productos/></Item>
+          </Grid>
+
+          <Grid item  xs={12} sm={6} md={4} lg={3}>
+          <Item><Productos/></Item>
+          </Grid>
+
+          <Grid item  xs={12} sm={6} md={4} lg={3}>
+          <Item><Productos/></Item>
+          </Grid>
+          
       </Grid>
+      
     </Box>
     
   );
