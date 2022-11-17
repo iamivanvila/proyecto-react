@@ -5,6 +5,9 @@ import SobreNosotros from "./componentes/SobreNosotros/SobreNosotros";
 // para poner el tema dark
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import Productos from "./componentes/Productos/Productos";
+import ProductosDos from "./componentes/Productos/ProductosDos";
+import ProductosData from "./componentes/Productos/ProductosData"
 
 const darkTheme = createTheme({
    palette: {
@@ -19,6 +22,9 @@ function App() {
          <div className="App">
             <ResponsiveAppBar />
             <Banner />
+            <Productos/>
+            <ProductosDos/>
+            <ProductosData/>
             <SobreNosotros />
             <Footer />
          </div>
