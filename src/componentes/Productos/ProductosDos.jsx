@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Productos from './Productos';
-import ProductosData from './ProductosData';
-
+import productos from '../../ProductosData';
 
 
 
@@ -23,22 +22,20 @@ export default function ProductosDos() {
 
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} columns={12}>
-
-          <Grid item  xs={12} sm={6} md={4} lg={3}>
-          <Item><Productos/></Item>
+        {
+          productos.map (producto =>(
+            <Grid item  xs={12} sm={6} md={4} lg={3}>
+          <Item><Productos key={producto.id} productos= {producto}/></Item>
           </Grid>
-
-          <Grid item  xs={12} sm={6} md={4} lg={3}>
-          <Item><Productos/></Item>
+          ))
+        }
+        {
+          productos.map (producto =>(
+            <Grid item  xs={12} sm={6} md={4} lg={3}>
+          <Item><Productos key={producto.id} productos= {producto}/></Item>
           </Grid>
-
-          <Grid item  xs={12} sm={6} md={4} lg={3}>
-          <Item><Productos/></Item>
-          </Grid>
-
-          <Grid item  xs={12} sm={6} md={4} lg={3}>
-          <Item><Productos/></Item>
-          </Grid>
+          ))
+        }
           
       </Grid>
       
