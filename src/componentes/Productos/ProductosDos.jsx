@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Productos from './Productos';
+import ProductosData from './ProductosData';
 
 
 
@@ -18,6 +19,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function ProductosDos() {
   return (
+   
+
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} columns={12}>
 
@@ -40,6 +43,7 @@ export default function ProductosDos() {
       </Grid>
       
     </Box>
+    
     
   );
 }

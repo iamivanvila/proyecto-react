@@ -9,6 +9,9 @@ import Productos from "./componentes/Productos/Productos";
 import ProductosDos from "./componentes/Productos/ProductosDos";
 
 
+
+
+
 const darkTheme = createTheme({
    palette: {
       mode: "dark",
@@ -24,7 +27,6 @@ function App() {
             <Banner />
             <Productos/>
             <ProductosDos/>
-
             <SobreNosotros />
             <Footer />
          </div>

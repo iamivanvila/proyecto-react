@@ -1,9 +1,9 @@
 import React from "react";
-
 import Grid from "@mui/material/Grid";
-
 import Box from "@mui/material/Box";
 import { Button, ListItemText, Typography } from "@mui/material";
+
+
 
 const footer = () => {
   return (
@@ -11,7 +11,9 @@ const footer = () => {
       <Box display={"flex"} alignItems={"center"}>
         <Grid container spacing={2} justifyContent={"center"}>
           <Grid item md={3} sm={6} xs={12}>
-            <img src="images" alt="" />
+            
+            <img src= "../images/logoBurgerHouse.png" alt=""/>
+            
           </Grid>
 
           <Grid item md={3} sm={6} xs={12}>
