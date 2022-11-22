@@ -22,6 +22,7 @@ function SobreNosotros() {
             de las mejores hamburguesas. Para Delivery podes hacer tu pedido en la web o encontranos en 
             Pedidos Ya y Rappi.
         </p>
+        <button class="btn"><a href="#">HACER PEDIDO!</a>  </button>
     </div>
 </div>
     )
