@@ -1,4 +1,4 @@
-import BotonComprar from './BotonComprar.jsx';
+import BotonComprar from './BotonComprar';
 import Carousel from './Carousel.jsx';
 
 const Banner = () => {
