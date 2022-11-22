@@ -10,11 +10,9 @@
     flex-direction: column;
 }
 
-.imagen{
-    width: 90%;
-    height: 55vh;
+.imagenCarrousel{
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
 }
 
-.container-carousel{
-    align-items: center;
-}

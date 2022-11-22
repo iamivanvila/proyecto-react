@@ -3,7 +3,7 @@ import Carousel from 'react-material-ui-carousel';
 import slider from './slider.json';
 
 
-const Inicio = () => {
+function Inicio  () {
 
     return(
         <>
