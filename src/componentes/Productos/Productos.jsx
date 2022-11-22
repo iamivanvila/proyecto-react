@@ -10,7 +10,7 @@ import { AddShoppingCart } from '@mui/icons-material';
 import accounting from "accounting"
 
 
-export default function Productos() {
+export default function Productos(productos) {
  
   return (
     <Card sx={{ maxWidth: 345 }}>
