@@ -24,7 +24,6 @@ function App() {
          <div className="App">
             <ResponsiveAppBar />
             <Banner />
-
             <Productos/>
             <ProductosDos/>
             <SobreNosotros />

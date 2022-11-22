@@ -21,8 +21,9 @@ const footer = () => {
       <Box display={"flex"} alignItems={"center"}>
         <Grid container spacing={2} justifyContent={"center"}>
           <Grid item md={3} sm={6} xs={12}>
-            <Box
+            <Box 
             component="img"
+          
             sx={{
               height: 70,
                      display: { xs: "none", md: "flex" },
@@ -76,7 +77,7 @@ const footer = () => {
             <form action="" method="post" enctype="text/plain" netlify />
             <label for="email adress"></label>
             <input type="email" name="email" id="" />
-            <Button variant="contained" color="inherit" size="small">
+            <Button variant="contained" color="primary" size="small">
               {" "}
               Enviar
             </Button>
