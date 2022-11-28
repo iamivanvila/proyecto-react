@@ -13,7 +13,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import logo from "../../images/logo.png";
 
 const footer = () => {
-<<<<<<< HEAD
    return (
       <div>
          <Box display={"flex"} alignItems={"center"}>
@@ -30,21 +29,6 @@ const footer = () => {
                      src={logo}
                   ></Box>
                </Grid>
-=======
-  return (
-    <div>
-      <Box display={"flex"} alignItems={"center"}>
-        <Grid container spacing={2} justifyContent={"center"}>
-          <Grid item md={3} sm={6} xs={12}>
-            <Box 
-            component="img"
-          
-            sx={{
-              height: 70,
-                     display: { xs: "none", md: "flex" },
-                     mr: 1,
-            }}>
->>>>>>> main
 
                <Grid item md={3} sm={6} xs={12}>
                   <Typography h4 fontSize={20} align="center">
@@ -106,7 +90,6 @@ const footer = () => {
                      <MailOutlineIcon />
                   </ListItemText>
 
-<<<<<<< HEAD
                   <Typography p fontSize={15} align="center">
                      {" "}
                      Serás el primero en enterarte de nuestras novedades y
@@ -125,20 +108,6 @@ const footer = () => {
          </Box>
       </div>
    );
-=======
-            <form action="" method="post" enctype="text/plain" netlify />
-            <label for="email adress"></label>
-            <input type="email" name="email" id="" />
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Enviar
-            </Button>
-          </Grid>
-        </Grid>
-      </Box>
-    </div>
-  );
->>>>>>> main
 };
 
 export default footer;
