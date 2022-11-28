@@ -10,7 +10,6 @@ import ProductosDos from "./componentes/Productos/ProductosDos";
 
 
 
-
 const darkTheme = createTheme({
    palette: {
       mode: "dark",
@@ -24,8 +23,10 @@ function App() {
          <div className="App">
             <ResponsiveAppBar />
             <Banner />
+
             <Productos/>
             <ProductosDos/>
+
             <SobreNosotros />
             <Footer />
          </div>
