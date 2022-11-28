@@ -25,7 +25,7 @@ const Total = () => {
       <div>
          <h5>Total items : {basket?.length}</h5>
 
-         <h5> {accounting.formatMoney(basket)} </h5>
+         <h5> {accounting.formatMoney(getBasketTotal(basket))} </h5>
       </div>
    );
 };
