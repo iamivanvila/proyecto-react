@@ -7,42 +7,37 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import logo from "../Navbar/logo.png";
+import logo from "../../images/logo.png";
+import { ShoppingCart } from "@mui/icons-material";
+import { Badge } from "@mui/material";
+import { Link } from "react-router-dom";
+import { useStateValue } from "../../StateProvider";
+import CheckoutPage from "../CheckoutPage";
 
 const pages = ["Inicio", "Nosotros", "Productos", "Contacto"];
-const settings = ["Perfil", "Cuenta", "Cerrar sesión"];
 
 function ResponsiveAppBar() {
    const [anchorElNav, setAnchorElNav] = React.useState(null);
-   const [anchorElUser, setAnchorElUser] = React.useState(null);
+   const [{ basket }, dispatch] = useStateValue();
 
    const handleOpenNavMenu = (event) => {
       setAnchorElNav(event.currentTarget);
-   };
-   const handleOpenUserMenu = (event) => {
-      setAnchorElUser(event.currentTarget);
    };
 
    const handleCloseNavMenu = () => {
       setAnchorElNav(null);
    };
 
-   const handleCloseUserMenu = () => {
-      setAnchorElUser(null);
-   };
-
    return (
-      <AppBar position="static">
+      <AppBar position="sticky">
          <Container maxWidth="xl">
             <Toolbar disableGutters>
                <Box
                   component="img"
                   sx={{
-                     height: 70,
+                     height: 90,
                      display: { xs: "none", md: "flex" },
                      mr: 1,
                   }}
@@ -145,37 +140,20 @@ function ResponsiveAppBar() {
                   ))}
                </Box>
 
-               <Box sx={{ flexGrow: 0 }}>
-                  <Tooltip title="Abrir Configuraciones">
-                     <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                        <Avatar
-                           alt="Remy Sharp"
-                           src="/static/images/avatar/2.jpg"
-                        />
+               <Box sx={{ flexGrow: 0, display: "flex" }}>
+                  <Typography variant="h6" color="textPrimary" component="p">
+                     Hello Guest
+                  </Typography>
+                  <Button variant="outline">
+                     <strong>Login</strong>
+                  </Button>
+                  <Link to="/chechout">
+                     <IconButton aria-label="show cart item" color="inherit">
+                        <Badge badgeContent={basket?.length} color="secondary">
+                           <ShoppingCart fontSize="large"></ShoppingCart>
+                        </Badge>
                      </IconButton>
-                  </Tooltip>
-                  <Menu
-                     sx={{ mt: "45px" }}
-                     id="menu-appbar"
-                     anchorEl={anchorElUser}
-                     anchorOrigin={{
-                        vertical: "top",
-                        horizontal: "right",
-                     }}
-                     keepMounted
-                     transformOrigin={{
-                        vertical: "top",
-                        horizontal: "right",
-                     }}
-                     open={Boolean(anchorElUser)}
-                     onClose={handleCloseUserMenu}
-                  >
-                     {settings.map((setting) => (
-                        <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                           <Typography textAlign="center">{setting}</Typography>
-                        </MenuItem>
-                     ))}
-                  </Menu>
+                  </Link>
                </Box>
             </Toolbar>
          </Container>

@@ -12,7 +12,7 @@ const footer = () => {
         <Grid container spacing={2} justifyContent={"center"}>
           <Grid item md={3} sm={6} xs={12}>
             
-            <img src= "../images/logoBurgerHouse.png" alt=""/>
+            <img src="../../images/loboBurgerHouse.png" alt="icono"/>
             
           </Grid>
 

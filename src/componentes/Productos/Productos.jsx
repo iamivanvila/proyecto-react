@@ -1,16 +1,36 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { AddShoppingCart } from '@mui/icons-material';
-import accounting from "accounting"
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import Producto from "./Producto";
+import productosData from "./productosData";
 
+const Item = styled(Paper)(({ theme }) => ({
+   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+   ...theme.typography.body2,
+   padding: theme.spacing(2),
+   textAlign: "center",
+   color: theme.palette.text.secondary,
+}));
 
+<<<<<<< HEAD
 export default function Productos() {
+   return (
+      <Box sx={{ flexGrow: 1 }}>
+         <Grid container spacing={2} columns={12}>
+            {productosData.map((product) => (
+               <Grid item xs={12} sm={6} md={4} lg={3}>
+                  <Item>
+                     <Producto key={product.id} product={product} />
+                  </Item>
+               </Grid>
+            ))}
+         </Grid>
+      </Box>
+   );
+=======
+export default function Productos(productos) {
  
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -44,6 +64,5 @@ export default function Productos() {
     
     </Card>
   );
+>>>>>>> main
 }
-
-
