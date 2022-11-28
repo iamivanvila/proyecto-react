@@ -1,3 +1,4 @@
+import BotonComprar from './BotonComprar';
 import Carousel from './Carousel.jsx';
 
 const Banner = () => {
@@ -5,6 +6,7 @@ const Banner = () => {
     return (
         <div>
             <Carousel/>
+            <BotonComprar/>
         </div>
     )
 }

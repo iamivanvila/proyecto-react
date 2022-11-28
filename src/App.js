@@ -5,10 +5,10 @@ import SobreNosotros from "./componentes/SobreNosotros/SobreNosotros";
 // para poner el tema dark
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+
 import Productos from "./componentes/Productos/Productos";
-import ProductosDos from "./componentes/Productos/ProductosDos";
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CheckoutPage from "./componentes/CheckoutPage";
 
 const darkTheme = createTheme({
    palette: {
@@ -20,16 +20,23 @@ function App() {
    return (
       <ThemeProvider theme={darkTheme}>
          <CssBaseline />
-         <div className="App">
-            <ResponsiveAppBar />
-            <Banner />
+         <BrowserRouter>
+            <div className="App">
+               <ResponsiveAppBar />
+               <Banner />
+               <CheckoutPage />
+               <Productos />
+               <SobreNosotros />
 
-            <Productos/>
-            <ProductosDos/>
+               <Routes>
+                  <Route path="/nosotros" element={<SobreNosotros />} />
+                  <Route path="/productos" element={<Productos />} />
+                  <Route path="/checkout" element={<CheckoutPage />} />
+               </Routes>
 
-            <SobreNosotros />
-            <Footer />
-         </div>
+               <Footer />
+            </div>
+         </BrowserRouter>
       </ThemeProvider>
    );
 }

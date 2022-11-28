@@ -1,14 +1,23 @@
 import { Button } from '@mui/material';
 
-const Boton = () => {
+const Boton = (props) => {
 
-    return(
-        <Button variant="contained" color="primary" size='large'
-            onClick={() => { {/* redigir a seccion selecionada */} }}
+    const { title, color, click } = props;
+    //btn de compras
+    //items.length
+    //clase 4 min 34
+
+    return (
+        <Button
+            onClick={click}
+            variant="contained"
+            color={color}
+            size='large'
         >
-            ver Mas!
+            {title}
         </Button>
     )
 }
 
 export default Boton;
+
