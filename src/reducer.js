@@ -6,8 +6,9 @@ export const actionTypes = {
    ADD_TO_BASKET: "ADD_TO_BASKET",
    REMOVE_ITEM: "REMOVE_ITEM",
 };
-export const getBasketTotal = (basket) => {
-   basket?.reduce((amount, item) => item.price + amount, 0);
+
+export const getBasketTotal = function sumarTotal(basket) {
+   return basket?.reduce((total, item) => total + item.price, 0);
 };
 
 const reducer = (state, action) => {
