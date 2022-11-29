@@ -11,7 +11,6 @@ const Total = () => {
       <div>
          <Typography variant="h4" sx={{ mt: 5, ml: 5 }}>
             Total Items : {basket?.length}
-            {console.log(getBasketTotal(basket))}
             <br />
             {accounting.formatMoney(getBasketTotal(basket))}
          </Typography>

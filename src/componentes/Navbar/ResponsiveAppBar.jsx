@@ -33,16 +33,18 @@ function ResponsiveAppBar() {
       <AppBar position="sticky">
          <Container maxWidth="xl">
             <Toolbar disableGutters>
-               <Box
-                  component="img"
-                  sx={{
-                     height: 90,
-                     display: { xs: "none", md: "flex" },
-                     mr: 1,
-                  }}
-                  alt="BurguerHouse"
-                  src={logo}
-               />
+               <Link to="/">
+                  <Box
+                     component="img"
+                     sx={{
+                        height: 90,
+                        display: { xs: "none", md: "flex" },
+                        mr: 1,
+                     }}
+                     alt="BurguerHouse"
+                     src={logo}
+                  />
+               </Link>
 
                <Typography
                   variant="h6"
@@ -92,9 +94,11 @@ function ResponsiveAppBar() {
                      }}
                   >
                      {pages.map((page) => (
-                        <MenuItem key={page} onClick={handleCloseNavMenu}>
-                           <Typography textAlign="center">{page}</Typography>
-                        </MenuItem>
+                        <Link to="/">
+                           <MenuItem key={page} onClick={handleCloseNavMenu}>
+                              <Typography textAlign="center">{page}</Typography>
+                           </MenuItem>
+                        </Link>
                      ))}
                   </Menu>
                </Box>
@@ -143,9 +147,12 @@ function ResponsiveAppBar() {
                   <Typography variant="h6" color="textPrimary" component="p">
                      Hello Guest
                   </Typography>
-                  <Button variant="outline">
-                     <strong>Login</strong>
-                  </Button>
+                  <Link to="signin">
+                     <Button variant="outline">
+                        <strong>Login</strong>
+                     </Button>
+                  </Link>
+
                   <Link to="checkout">
                      <IconButton aria-label="show cart item" color="inherit">
                         <Badge badgeContent={basket?.length} color="secondary">

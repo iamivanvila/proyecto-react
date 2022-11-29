@@ -8,6 +8,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { Route, Routes } from "react-router-dom";
 import CheckoutPage from "./componentes/CheckoutPage";
 import Home from "./pages/Home";
+import SignIn from "./componentes/Signin";
 
 const darkTheme = createTheme({
    palette: {
@@ -24,7 +25,7 @@ function App() {
             <ResponsiveAppBar />
             <Routes>
                <Route path="/" element={<Home />} />
-
+               <Route path="signin" element={<SignIn />} />
                <Route path="checkout" element={<CheckoutPage />} />
             </Routes>
             <Footer />
