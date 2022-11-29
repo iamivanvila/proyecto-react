@@ -13,6 +13,7 @@ import accounting from "accounting";
 import { AddShoppingCart } from "@mui/icons-material";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
+import Swal from 'sweetalert2';
 
 const ExpandMore = styled((props) => {
    const { expand, ...other } = props;
@@ -33,6 +34,30 @@ export default function Producto({
    const handleExpandClick = () => {
       setExpanded(!expanded);
    };
+
+   //sweet alert
+   const handlerSwal = () => {
+
+      Swal.fire({
+              title: 'Quieres agregarlo al carrito?',
+              icon: 'info',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              confirmButtonText: 'Yes',
+              timer: '5000',
+          }).then((result) => {
+              if (result.isConfirmed) {
+                  Swal.fire(
+                      'Confirmado!',
+                      'Se ha agregado al carrito con exito.',
+                      'success',
+                  )
+                  //componente agregar al carrito
+                  addToBasket()
+              }
+          })
+  };
 
    const [{ basket }, dispatch] = useStateValue();
 
@@ -66,7 +91,7 @@ export default function Producto({
             </Typography>
          </CardContent>
          <CardActions disableSpacing>
-            <IconButton aria-label="add to Cart" onClick={addToBasket}>
+            <IconButton aria-label="add to Cart" onClick={handlerSwal}>
                <AddShoppingCart fontSize="large" />
             </IconButton>
 
