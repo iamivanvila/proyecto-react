@@ -48,11 +48,6 @@ export default function Producto({
               timer: '5000',
           }).then((result) => {
               if (result.isConfirmed) {
-                  Swal.fire(
-                      'Confirmado!',
-                      'Se ha agregado al carrito con exito.',
-                      'success',
-                  )
                   //componente agregar al carrito
                   addToBasket()
               }
