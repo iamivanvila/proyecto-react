@@ -49,7 +49,7 @@ export default function CheckoutCard({
       });
 
    return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, mt: 2, ml: 5 }}>
          <CardHeader
             action={
                <Typography variant="h5" color="textSecondary">
@@ -58,7 +58,12 @@ export default function CheckoutCard({
             }
             title={name}
          />
-         <CardMedia component="img" height="194" image={image} alt="CHICK" />
+         <CardMedia
+            component="img"
+            height="194"
+            image={image}
+            alt="BurguerHouse"
+         />
          <CardContent>
             <Typography variant="body2" color="text.secondary">
                {description}

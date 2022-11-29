@@ -147,7 +147,7 @@ function ResponsiveAppBar() {
                   <Button variant="outline">
                      <strong>Login</strong>
                   </Button>
-                  <Link to="/chechout">
+                  <Link to="checkout">
                      <IconButton aria-label="show cart item" color="inherit">
                         <Badge badgeContent={basket?.length} color="secondary">
                            <ShoppingCart fontSize="large"></ShoppingCart>

@@ -2,20 +2,7 @@ import React from "react";
 import accounting from "accounting";
 import { getBasketTotal } from "../reducer";
 import { useStateValue } from "../StateProvider";
-// import { makeStyles } from "@mui/material";
-
-// const useStyles = makeStyles((theme) => ({
-//    root: {
-//       display: "flex",
-//       flexDirection: "column",
-//       justifyContent: "center",
-//       alignItems: "center",
-//       height: "20vh",
-//    },
-//    button: {
-//       marginTop: "2rem",
-//    },
-// }));
+import { Button, Stack, Typography } from "@mui/material";
 
 const Total = () => {
    //    const classes = useStyles();
@@ -23,9 +10,14 @@ const Total = () => {
 
    return (
       <div>
-         <h5>Total items : {basket?.length}</h5>
-
-         <h5> {accounting.formatMoney(getBasketTotal(basket))} </h5>
+         <Typography variant="h4" sx={{ mt: 5, ml: 5 }}>
+            Total Items : {basket?.length}
+            <br />
+            {accounting.formatMoney(getBasketTotal(basket))}
+         </Typography>
+         <Stack>
+            <Button size="large">Pagar</Button>
+         </Stack>
       </div>
    );
 };
