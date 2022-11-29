@@ -14,7 +14,6 @@ import { ShoppingCart } from "@mui/icons-material";
 import { Badge } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
-import CheckoutPage from "../CheckoutPage";
 
 const pages = ["Inicio", "Nosotros", "Productos", "Contacto"];
 
