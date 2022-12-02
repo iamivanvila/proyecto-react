@@ -24,13 +24,15 @@ const CheckoutPage = () => {
       <div>
          <Grid container sapcing={3}>
             <Grid item xs={12}>
-               <Typography>Shopping Cart</Typography>
+               <Typography align="center" variant="h4">
+                  Shopping Cart
+               </Typography>
             </Grid>
             <Grid item xs={12} sm={8} md={9} container spacing={2}>
                <FormRow />
             </Grid>
             <Grid item xs={12} sm={4} md={3}>
-               <Typography>
+               <Typography variant="h6">
                   <Total />
                </Typography>
             </Grid>

@@ -3,7 +3,7 @@ const productosData = [
       id: 1,
       name: "CHEESE BURGER",
       price: 1500,
-      description: "Harburguesa de carne vacuna con doble queso cheddar",
+      description: "Hamburguesa carne vacuna con doble cheddar",
       image: "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Hamburguesa-con-Queso.png",
    },
 
@@ -11,7 +11,7 @@ const productosData = [
       id: 2,
       name: "VEGAN BURGER",
       price: 1000,
-      description: "Harburguesa de lenteja con arroz yamaní",
+      description: "Hamburguesa de lenteja con arroz yamaní",
       image: "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/WhopperVegetal_2604.png",
    },
 
@@ -19,7 +19,7 @@ const productosData = [
       id: 3,
       name: "CHICKEN BURGER",
       price: 1250,
-      description: "Harburguesa de pollo con perejil y ajo",
+      description: "Hamburguesa de pollo con perejil y ajo",
       image: "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_King-de-Pollo-Guacamole_1200X900_210922.png",
    },
 
@@ -27,7 +27,7 @@ const productosData = [
       id: 4,
       name: "BACON BURGER",
       price: 1600,
-      description: "Harburguesa de carne vacuna con panceta",
+      description: "Hamburguesa de carne vacuna con panceta",
       image: "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Bacon-King-Carne.png",
    },
    {
@@ -51,7 +51,7 @@ const productosData = [
       name: "Doble Napolitano XL BURGER",
       price: 1650,
       description:
-         "La combinación de siempre, ahora duplicada: 2 carnes a la parrilla + jamón y queso + tomate + mayonesa. ",
+         "2 carnes a la parrilla + jamón y queso + tomate + mayonesa. ",
       image: "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/DobleNapolitano-XL-1.png",
    },
    {
@@ -59,7 +59,7 @@ const productosData = [
       name: "Bondiolita King Pickle Pepino",
       price: 1850,
       description:
-         "Una creación digna de un REY. Pan de germen de trigo, barbacoa y mostaza, pickle pepino, cebolla y LA DELICIOSA BONDIOLITA DESMECHADA.",
+         "Pan de germen de trigo, barbacoa y mostaza, pickle pepino, cebolla y LA DELICIOSA BONDIOLITA DESMECHADA.",
       image: "https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BondiolitaKing-pepino.png",
    },
    {
