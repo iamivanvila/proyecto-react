@@ -23,6 +23,8 @@ function App() {
          <BrowserRouter>
             <div className="App">
                <ResponsiveAppBar />
+               
+
                <Banner />
                <CheckoutPage />
                <Productos />
