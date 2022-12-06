@@ -10,10 +10,11 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import accounting from "accounting";
-import { AddShoppingCart, CleaningServices } from "@mui/icons-material";
+import { AddShoppingCart } from "@mui/icons-material";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 import Swal from 'sweetalert2';
+import axios from "axios";
 
 const ExpandMore = styled((props) => {
    const { expand, ...other } = props;
@@ -54,8 +55,12 @@ export default function Producto({
           })
   };
 
+  //prueba json server
+   const BASE_URL = 'http://localhost:3000';
+
    const [{ basket }, dispatch] = useStateValue();
 
+   //const addToBasket = async (e) => {
    const addToBasket = () => {
       dispatch({
          type: actionTypes.ADD_TO_BASKET,
@@ -67,6 +72,12 @@ export default function Producto({
             image,
          },
       });
+   //prueba axios
+   //   await  axios({
+   //       method: 'post',
+   //       url: `${BASE_URL}/order`, 
+   //       data: item,
+   //    })
    };
 
    return (
