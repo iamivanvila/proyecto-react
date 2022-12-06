@@ -10,7 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import accounting from "accounting";
-import { AddShoppingCart } from "@mui/icons-material";
+import { AddShoppingCart, CleaningServices } from "@mui/icons-material";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 import Swal from 'sweetalert2';
@@ -49,7 +49,7 @@ export default function Producto({
           }).then((result) => {
               if (result.isConfirmed) {
                   //componente agregar al carrito
-                  addToBasket()
+                  addToBasket();
               }
           })
   };
