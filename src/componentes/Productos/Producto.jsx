@@ -14,6 +14,7 @@ import { AddShoppingCart } from "@mui/icons-material";
 import { actionTypes } from "../../reducer";
 import { useStateValue } from "../../StateProvider";
 import Swal from 'sweetalert2';
+import axios from "axios";
 
 const ExpandMore = styled((props) => {
    const { expand, ...other } = props;
@@ -49,13 +50,17 @@ export default function Producto({
           }).then((result) => {
               if (result.isConfirmed) {
                   //componente agregar al carrito
-                  addToBasket()
+                  addToBasket();
               }
           })
   };
 
+  //prueba json server
+   const BASE_URL = 'http://localhost:3000';
+
    const [{ basket }, dispatch] = useStateValue();
 
+   //const addToBasket = async (e) => {
    const addToBasket = () => {
       dispatch({
          type: actionTypes.ADD_TO_BASKET,
@@ -67,6 +72,12 @@ export default function Producto({
             image,
          },
       });
+   //prueba axios
+   //   await  axios({
+   //       method: 'post',
+   //       url: `${BASE_URL}/order`, 
+   //       data: item,
+   //    })
    };
 
    return (
